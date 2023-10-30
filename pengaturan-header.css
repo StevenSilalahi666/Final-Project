@@ -1,0 +1,96 @@
+.header {
+    /* Styles for header */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end; /* Menggeser semua elemen navbar ke kanan */
+    align-items: center;
+    justify-content: space-between;
+    /* margin-right: 9px; */
+}
+
+.navbar img {
+    margin-right: 320px; /* Menggeser gambar logo ke kiri */
+
+
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.dropdown {
+    margin-right: 30px;
+    overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 9px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    border: 2px solid black;
+    border-radius: 90px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 9px 20px;
+}
+
+.navbar-right {
+    float: right;
+}
+.dropbtn2{
+    padding-left: 100px;
+    border: none;
+    margin-left: -190px;
+    margin-right: -350px;
+    
+    
+}
