@@ -1,0 +1,45 @@
+    /* Tambahkan gaya CSS untuk formulir di sini */
+    body {
+        font-family: Arial, sans-serif;
+      }
+  
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+  
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+  
+      .gender-container,
+      .hobbies-container {
+        display: flex;
+        margin-bottom: 16px;
+      }
+  
+      .gender-container label {
+        margin-right: 8px;
+      }
+  
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 8px;
+        /* Ditambahkan untuk menciptakan jarak antara tombol radio dan kotak centang */
+      }
+  
+      /* header css */
+      .header {
+      /* Styles for header */
+  }
+  
