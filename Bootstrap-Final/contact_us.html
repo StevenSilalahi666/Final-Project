@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="contactus.css">
+
+  <script>
+    function validateForm() {
+    // Dapatkan input formulir
+    let fullName = document.forms["contactForm"]["fullName"].value;
+    let email = document.forms["contactForm"]["email"].value;
+    let username = document.forms["contactForm"]["username"].value;
+    let password = document.forms["contactForm"]["password"].value;
+    let gender = document.querySelector('input[name="gender"]:checked');
+    let religion = document.forms["contactForm"]["religion"].value;
+    let address = document.forms["contactForm"]["address"].value;
+    let hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
+
+    // Periksa apakah input kosong atau tidak dipilih
+    if (fullName === "") {
+      alert("Nama lengkap harus diisi");
+      return false;
+    }
+
+    if (email === "") {
+      alert("Email harus diisi");
+      return false;
+    }
+
+    if (username === "") {
+      alert("Nama pengguna harus diisi");
+      return false;
+    }
+
+    if (password === "") {
+      alert("Kata sandi harus diisi");
+      return false;
+    }
+
+    if (gender === null) {
+      alert("Jenis kelamin harus dipilih");
+      return false;
+    }
+
+    if (religion === "") {
+      alert("Agama harus dipilih");
+      return false;
+    }
+
+    if (address === "") {
+      alert("Alamat harus diisi");
+      return false;
+    }
+
+    if (hobbies.length === 0) {
+      alert("Pilih setidaknya satu hobi");
+      return false;
+    }
+
+    // Validasi tambahan dapat ditambahkan sesuai kebutuhan
+
+    // Formulir valid
+    alert("Formulir berhasil disubmit!");
+    return true;
+  }
+  </script>
+
+
+</head>
+
+<body style="margin: 0; font-family: Arial, sans-serif;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Screenshot_2023-10-23_210942.png" alt="logo toyota" style="width: 238px; height: 43px; margin-left: 5px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarNav ">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item dropdown me-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Opsi Lain
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="contact_us.html">Hubungi kami</a></li>
+                <li><a class="dropdown-item" href="biodata.html">Biodata</a></li>
+                <li><a class="dropdown-item" href="free-content.html">konten gratis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shopping Tools
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="#">Buy</a></li>
+                <li><a class="dropdown-item" href="#">Sell</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tautan Link Unai
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li><a class="dropdown-item" href="https://fti.unai.edu/">Link menuju Web FTI Unai</a></li>
+                <li><a class="dropdown-item" href="https://unai.edu/">Link menuju Web Unai</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://pic.onlinewebfonts.com/thumbnails/icons_229779.svg" alt="logo user"
+                  style="width: 200px; height: 35px; margin-right: 0; padding-left: 130px; ">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown4">
+                <li><a class="dropdown-item" href="biodata.html">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <form>
+    <label for="nama_lengkap">Nama Lengkap:</label><br>
+    <input type="text" id="nama_lengkap" name="nama_lengkap"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="nama_pengguna">Nama Pengguna:</label><br>
+    <input type="text" id="nama_pengguna" name="nama_pengguna"><br>
+
+    <label for="kata_sandi">Kata Sandi:</label><br>
+    <input type="password" id="kata_sandi" name="kata_sandi"><br>
+
+    <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+    <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+    <label for="pria">Pria</label>
+    <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+    <label for="wanita">Wanita</label><br>
+
+    <label for="agama">Agama:</label><br>
+    <select id="agama" name="agama">
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+        <option value="Lainnya">Lainnya</option>
+    </select><br>
+
+    <label for="alamat">Alamat:</label><br>
+    <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br>
+
+    <label for="hobi">Hobi:</label><br>
+    <input type="checkbox" id="hobi_1" name="hobi_1" value="Olahraga">
+    <label for="hobi_1">Olahraga</label>
+    <input type="checkbox" id="hobi_2" name="hobi_2" value="Musik">
+    <label for="hobi_2">Musik</label>
+    <input type="checkbox" id="hobi_3" name="hobi_3" value="Membaca">
+    <label for="hobi_3">Membaca</label><br>
+
+    <input type="submit" value="Simpan">
+</form>
+
+
+
+
+  <footer class="container-fluid bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+  
+  <div class="col-11 px-0 ">
+  
+    <div class="d-flex align-items-center justify-content-between py-2 ">
+    <div class="d-flex align-items-center ">
+        <div class="me-5"></div>
+      <div class="me-5">
+        <p class="fs-8 fw-bold mb-0 ">Accessibility</p> 
+      </div>
+  
+      <div class="me-5 ">
+        <p class="fs-8 mb-0 text-danger fw-bold">YOUR PRIVACY CHOICES</p>
+      </div>
+  
+      <div class="me-5"> 
+        <p class="fs-8 fw-bold mb-0">Cookie Consent Options</p>
+      </div>
+    </div>
+  
+      <div class="d-flex align-items-center ">
+        
+        <button class="btn btn-danger rounded-pill px-3 me-3">Manage Preferences</button>  
+  
+        <img src="logo-footer/fb-removebg-preview.png" alt="" style="width: 60px;" class="me-2">
+        
+        <img src="logo-footer/yt-removebg-preview.png" alt="" style="width: 50px;" class="me-2">
+        
+        <img src="logo-footer/x-removebg-preview.png" alt="" style="width: 50px;" class="me-2">
+        
+        <img src="logo-footer/ig-removebg-preview.png" alt="" style="width: 50px;" class="me-2">
+        
+        <img src="logo-footer/pth-removebg-preview.png" alt="" style="width: 52px;">
+        
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  </div>
+  
+  </div>
+  <div class="row mt-5 px-5 border-bottom">
+  
+  
+  <div class="col-2 mb-5 ms-5" >
+    <h5>SHOPPING TOOLS</h5>
+    <ul class="list-unstyled fs-6">        
+      <li class="pt-3">Trade-In Value</li>
+      <li class="pt-3">Build Your Toyota</li>
+      <li class="pt-3">Search Inventory</li>
+      <li class="pt-3">Find a Dealer</li>
+      <li class="pt-3">SmartPath</li>
+      <li class="pt-3">Local Specials</li>
+      <li class="pt-3">What Fits My Budget</li>
+      <li class="pt-3">Payment Estimator</li>
+      <li class="pt-3">Request a Quote</li>
+      <li class="pt-3">Toyota Certified Used Vehicles</li>
+      <li class="pt-3">Buy Parts & Accessories</li>    
+    </ul>
+   </div>
+  
+  <div class="col-2 mb-5 ms-5">
+    <h5>VEHICLES</h5>
+    <ul class="list-unstyled fs-6">        
+        <li class="pt-3">All Toyota Vehicles</li>
+        <li class="pt-3">SUVs</li>
+        <li class="pt-3">Trucks</li>
+        <li class="pt-3">Cars</li>
+        <li class="pt-3">Crossovers</li>
+        <li class="pt-3">Electrified Vehicles</li>
+        <li class="pt-3">Hybrids</li>
+        <li class="pt-3">Hybrid Cars</li>
+        <li class="pt-3">Hybrid SUVs</li>
+        <li class="pt-3">TRD Pro Series</li>
+        <li class="pt-3">Nightshade Series</li>
+      </ul>
+      
+    </ul>
+   </div>
+  
+  
+   <div class="col-2 mb-5 ms-4">
+    <h5>HELPFUL LINKS</h5>
+    <ul class="list-unstyled fs-6">
+      <li class="pt-3">Dealers</li>
+      <li class="pt-3">Deals and Incentives</li>
+      <li class="pt-3">Audio Multimedia & Connected Services</li>
+      <li class="pt-3">Mobile Phone Compatibility</li>
+      <li class="pt-3">Mobility</li>
+      <li class="pt-3">Toyota Fleet</li>
+      <li class="pt-3">Rent a Toyota</li>
+      <li class="pt-3">Toyota Financial Services</li>
+      <li class="pt-3">Southeast Toyota Finance</li>
+      <li class="pt-3">Toyota Insurance</li>
+      <li class="pt-3">Email Updates</li>
+    </ul>
+   </div>
+  
+   <div class="col-2 mb-5 ms-5">
+    <h5>OWNERS</h5>
+    <ul class="list-unstyled fs-6">
+      <li class="pt-3">Owners Home</li>
+      <li class="pt-3">ToyotaCare & Maintenance Plans</li>
+      <li class="pt-3">Safety Recalls & Service Campaigns</li>
+      <li class="pt-3">Service Centers</li>
+      <li class="pt-3">Service Specials</li>
+      <li class="pt-3">Safety Hub</li>
+      <li class="pt-3">Warning Lights</li>
+      <li class="pt-3">Manuals & Warranties</li>
+      <li class="pt-3">Service Coupons Discounts</li>
+    </ul>
+   </div>
+  
+   <div class="col-2 mb-5 ms-5">
+    <h5>ABOUT TOYOTA</h5>
+    <ul class="list-unstyled fs-6">
+      <li class="pt-3">Owners Home</li>
+      <li class="pt-3">ToyotaCare & Maintenance Plans</li>
+      <li class="pt-3">Safety Recalls & Service Campaigns</li>
+      <li class="pt-3">Service Centers</li>
+      <li class="pt-3">Service Specials</li>
+      <li class="pt-3">Safety Hub</li>
+      <li class="pt-3">Warning Lights</li>
+      <li class="pt-3">Manuals & Warranties</li>
+      <li class="pt-3">Service Coupons Discounts</li>
+    </ul>
+   </div>
+  
+  </div>
+  
+  
+  </div>
+  
+  
+  <div class="row py-5">
+  <div class="col-4 offset-4 text-center">
+  <img src="Screenshot_2023-10-23_210942.png" alt="" height="40"> 
+  <p>Proud Partner of Team USA</p>  
+  </div>
+  
+  
+  
+  <div class="row py-5">
+  <div class="col-4 offset-4 text-center">
+  <h5 class="me-2 d-inline">Contact Us</h5> 
+  <h5 class="me-2 d-inline">FAQs</h5>
+  <h5 class="d-inline">Espanol</h5>  
+  </div>
+  
+  <p class="text-center text-muted small mt-5">
+  ©2023 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.<br>
+  The use of Olympic Marks, Terminology and Imagery is authorized by the U.S. Olympic & Paralympic Committee pursuant to Title 36 U.S. Code Section 220506.
+  </p>
+  
+  <div class="d-flex justify-content-center">
+  <p class="border-start ps-3 me-2 mb-0 small">Privacy Notice</p>
+  <p class="border-start ps-3 me-2 mb-0 small">Legal Terms</p>
+  <p class="border-start ps-3 mb-0 small">Site Map</p>
+  </div>
+  
+  </div>
+  
+  
+  </footer>
+  
+
+    
+  </body>
+  
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
