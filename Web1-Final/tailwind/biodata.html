@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind CSS 3.0.0</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <link rel="stylesheet" href="biodata.css">
+  
+
+  <style>
+    nav {
+      position: relative;
+      z-index: 999;
+    }
+  </style>
+
+</head>
+
+
+<body class="m-0 font-sans">
+    <header>
+      <nav class="bg-gray-100 ">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+          <a class="flex items-center text-gray-800 hover:text-gray-700" href="#">
+            <img class="h-10 w-auto mr-3" src="Screenshot_2023-10-23_210942.png" alt="logo toyota">
+          </a>
+          <div class="lg:hidden">
+            <button class="navbar-burger flex items-center py-2 px-3 text-indigo-500 rounded border border-indigo-500">
+              <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <ul class="hidden lg:flex items-center space-x-12">
+            <li class="relative group">
+              <a class="text-gray-800 hover:text-gray-700" href="#">Opsi Lain</a>
+              <ul class="absolute left-0 w-48 mt-2 space-y-2 py-2 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100">
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="index.html">Home</a></li>
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="contact_us.html">Hubungi kami</a></li>
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="biodata.html">Biodata</a></li>
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="free-content.html">konten gratis</a></li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a class="text-gray-800 hover:text-gray-700" href="#">Shopping Tools</a>
+              <ul class="absolute left-0 w-48 mt-2 space-y-2 py-2 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100">
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="#">Buy</a></li>
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="#">Sell</a></li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a class="text-gray-800 hover:text-gray-700" href="#">Tautan Link Unai</a>
+              <ul class="absolute left-0 w-48 mt-2 space-y-2 py-2 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100">
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="https://fti.unai.edu/">Link menuju Web FTI Unai</a></li>
+                <li><a class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-500 hover:text-white" href="https://unai.edu/">Link menuju Web Unai</a></li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a class="text-gray-800 hover:text-gray-700" href="#">
+                <img class="h-8 w-auto mr-3" src="https://pic.onlinewebfonts.com/thumbnails/icons_229779.svg" alt="logo user">
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+      <div class="biodata">
+          <img src="WhatsApp Image 2023-10-30 at 18.48.48_8c57cb20.jpg" alt="" width="300px" height="390px">
+          <h2>Biodata</h2>
+          <div class="info">
+              <span>Nama:</span> Steven Gilbert silalahi
+          </div>
+          <div class="info">
+              <span>Umur:</span> 19 tahun
+          </div>
+          <div class="info">
+              <span>Hobi:</span> Berenang
+          </div>
+          <div class="info">
+              <span>Agama:</span> Kristen
+          </div>
+      </div>
+  
+  </main>
+    
+
+
+
+
+  <footer class="container mx-auto bg-light py-5 bg-gray-100">
+    <div class="container mx-auto mb-10">
+      <div class="flex items-center">
+        <div class="col-span-11 px-0 ">
+          <div class="flex items-center justify-between py-2 ">
+            <div class="flex items-center ">
+              <div class="mr-20"></div>
+              <div class="mr-5">
+                <p class=" font-bold mb-0 ">Accessibility</p> 
+              </div>
+              <div class="mr-5 ">
+                <p class=" mb-0 text-red-600 font-bold">YOUR PRIVACY CHOICES</p>
+              </div>
+              <div class="mr-5"> 
+                <p class=" font-bold mb-0">Cookie Consent Options</p>
+              </div>
+            </div>
+            <div class="flex items-center ">
+              <button type="button" class="bg-red-500 rounded-full  pl-5 pr-5 mt-5 mb-5 text-white p-2 ml-80"> Manage Preferences </button>
+              <img src="logo-footer/fb-removebg-preview.png" alt="" class="w-16 mr-2">
+              <img src="logo-footer/yt-removebg-preview.png" alt="" class="w-12 mr-2">
+              <img src="logo-footer/x-removebg-preview.png" alt="" class="w-12 mr-2">
+              <img src="logo-footer/ig-removebg-preview.png" alt="" class="w-12 mr-2">
+              <img src="logo-footer/pth-removebg-preview.png" alt="" class="w-14">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex flex-col md:flex-row justify-between mx-5 md:mx-20">
+      <div class="mb-5 md:mb-0">
+        <h2 class="font-bold text-lg mb-2 ">SHOPPING TOOLS</h2>
+        <ul>
+          <li class="pt-3">Trade-In Value</li>
+          <li class="pt-3">Build Your Toyota</li>
+          <li class="pt-3">Search Inventory</li>
+          <li class="pt-3">Find a Dealer</li>
+          <li class="pt-3">SmartPath</li>
+          <li class="pt-3">Local Specials</li>
+          <li class="pt-3">What Fits My Budget</li>
+          <li class="pt-3">Payment Estimator</li>
+          <li class="pt-3">Request a Quote</li>
+          <li class="pt-3">Toyota Certified Used Vehicles</li>
+          <li class="pt-3">Buy Parts & Accessories</li>  
+        </ul>
+      </div>
+      <div class="mb-5 md:mb-0">
+        <h2 class="font-bold text-lg mb-2">VEHICLES</h2>
+        <ul>
+          <li class="pt-3">All Toyota Vehicles</li>
+          <li class="pt-3">SUVs</li>
+          <li class="pt-3">Trucks</li>
+          <li class="pt-3">Cars</li>
+          <li class="pt-3">Crossovers</li>
+          <li class="pt-3">Electrified Vehicles</li>
+          <li class="pt-3">Hybrids</li>
+          <li class="pt-3">Hybrid Cars</li>
+          <li class="pt-3">Hybrid SUVs</li>
+          <li class="pt-3">TRD Pro Series</li>
+          <li class="pt-3">Nightshade Series</li>
+        </ul>
+      </div>
+      <div class="mb-5 md:mb-0">
+        <h2 class="font-bold text-lg mb-2">HELPFUL LINKS</h2>
+        <ul>
+          <li class="pt-3">Dealers</li>
+          <li class="pt-3">Deals and Incentives</li>
+          <li class="pt-3">Audio Multimedia & Connected Services</li>
+          <li class="pt-3">Mobile Phone Compatibility</li>
+          <li class="pt-3">Mobility</li>
+          <li class="pt-3">Toyota Fleet</li>
+          <li class="pt-3">Rent a Toyota</li>
+          <li class="pt-3">Toyota Financial Services</li>
+          <li class="pt-3">Southeast Toyota Finance</li>
+          <li class="pt-3">Toyota Insurance</li>
+          <li class="pt-3">Email Updates</li>
+        </ul>
+      </div>
+      <div class="mb-5 md:mb-0">
+        <h2 class="font-bold text-lg mb-2">OWNERS</h2>
+        <ul>
+          <li class="pt-3">Owners Home</li>
+          <li class="pt-3">ToyotaCare & Maintenance Plans</li>
+          <li class="pt-3">Safety Recalls & Service Campaigns</li>
+          <li class="pt-3">Service Centers</li>
+          <li class="pt-3">Service Specials</li>
+          <li class="pt-3">Safety Hub</li>
+          <li class="pt-3">Warning Lights</li>
+          <li class="pt-3">Manuals & Warranties</li>
+          <li class="pt-3">Service Coupons Discounts</li>
+        </ul>
+      </div>
+      <div class="mb-5 md:mb-0">
+        <h2 class="font-bold text-lg mb-2">ABOUT TOYOTA</h2>
+        <ul>
+          <li class="pt-3">Owners Home</li>
+          <li class="pt-3">ToyotaCare & Maintenance Plans</li>
+          <li class="pt-3">Safety Recalls & Service Campaigns</li>
+          <li class="pt-3">Service Centers</li>
+          <li class="pt-3">Service Specials</li>
+          <li class="pt-3">Safety Hub</li>
+          <li class="pt-3">Warning Lights</li>
+          <li class="pt-3">Manuals & Warranties</li>
+          <li class="pt-3">Service Coupons Discounts</li>
+        </ul>
+      </div>
+    </div >
+
+
+    <div class="row py-5 mt-20">
+      <div class="col-4 offset-4 text-center">
+        <img src="Screenshot_2023-10-23_210942.png" alt="" class="h-10 mx-auto"> 
+        <p>Proud Partner of Team USA</p>  
+      </div>
+      <div class="row py-5">
+        <div class="col-4 offset-4 text-center ">
+          <h5 class="mr-2 inline-block "><strong>Contact Us</strong></h5> 
+          <h5 class="mr-2 inline-block"><strong>FAQs</strong></h5>
+          <h5 class="inline-block"><strong>Espanol</strong></h5>  
+        </div>
+        <p class="text-center  mt-5 mb-5 text-sm" >
+          ©2023 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.<br>
+          The use of Olympic Marks, Terminology and Imagery is authorized by the U.S. Olympic & Paralympic Committee pursuant to Title 36 U.S. Code Section 220506.
+        </p>
+        <div class="flex justify-center">
+          <p class=" pl-3 mr-2 mb-0 small">Privacy Notice</p>
+          <p class="border-l pl-3 mr-2 mb-0 small">Legal Terms</p>
+          <p class="border-l pl-3 mb-0 small">Site Map</p>
+        </div>
+      </div>
+    </div>
+    
+
+             
+    </footer>
+  
+
+  
+
+    
+  </body>
+
+  
+  
+</html>
